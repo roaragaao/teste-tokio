@@ -1,0 +1,42 @@
+ <div class="fundoClientes container-fluid">
+    <mat-grid-list cols="3" rowHeight="4:1">
+        <mat-card class="tituloUsuarios">Lista de usuarios</mat-card>
+    </mat-grid-list>
+    <div class="row">
+        <div class="col-sm-6" *ngFor="let dados of users$">
+            <mat-card class="tamanhoDoCard">     
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Nome do Usuario: {{ dados.username }}
+                    </mat-panel-title>
+                    <mat-panel-title>
+                        Email: {{ dados.email }}
+                    </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    
+                    <mat-panel-title class="espacamentoDetalhes">
+                        Nome Completo: {{ dados.name }}
+                    </mat-panel-title>
+                    <mat-panel-title class="espacamentoDetalhes">
+                        Telephone: {{ dados.phone }}
+                    </mat-panel-title>
+                    <mat-panel-title class="espacamentoDetalhes">
+                        Site: {{ dados.website }}
+                    </mat-panel-title >
+                    <mat-panel-title class="espacamentoDetalhes">
+                        Nome da Empresa: {{ dados.company.name }}
+                    </mat-panel-title>
+                    <mat-panel-title class="espacamentoDetalhes">
+                        Endereço: {{ dados.username }}
+                       
+                    </mat-panel-title>
+                </mat-expansion-panel>   
+            </mat-card>
+                
+        </div>
+    </div>
+    
+    
+    
+</div> 

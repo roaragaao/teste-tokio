@@ -1,0 +1,31 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.fundoClientes{
+    background-color: whitesmoke;  width: 100%;
+}
+
+.tituloUsuarios{
+    font-size: 25px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
+
+.tamanhoDoCard{
+    width: 550px;
+    margin: 20px;
+}
+
+.btn-detalhes{
+    background-color: seagreen;
+}
+
+.espacamentoDetalhes{
+    padding: 10px;
+    font-style: italic;
+}
+
+agm-map {
+    height: 300px;
+}
